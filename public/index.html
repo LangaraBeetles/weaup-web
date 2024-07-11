@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeaUp</title>
+</head>
+
+<body>
+    <script>
+        const url = new URL(window.location)
+        let redirectUrl = `exp+weaup:/auth?`
+        const test = `${redirectUrl}${url.searchParams}`;
+        window.location.replace(`${redirectUrl}token=${url.searchParams.get('code')}`);
+
+    </script>
+</body>
+
+</html>
