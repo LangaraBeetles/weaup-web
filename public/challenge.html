@@ -11,7 +11,7 @@
     <script>
         const url = new URL(window.location)
 
-        let redirectUrl = `exp+weaup:/together?`
+        let redirectUrl = `exp+weaup:/challenges/join-challenge?`
         url.searchParams.forEach(function (value, key) {
             redirectUrl += `${key}=${value}&`
         });
